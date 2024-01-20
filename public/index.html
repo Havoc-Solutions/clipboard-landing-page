@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-    <script defer src="js/script.js"></script>
-    <title></title>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+        <title>Clipboard Landing Page</title>
+    </head>
 
-  <body>
-    <main>
-      <h1>Project template for Frontend Mentor challenges</h1>
-    </main>
-  </body>
+    <body class="| flex">
+        <main class="content | flex">
+            <header class="| flex">
+                <img src="images/logo.svg" alt="Clipboard logo" class="header__logo">
+                <section class="header-text-wrapper | flow">
+                    <h1 class="header__title | clr-primary fnt-semi-bold">A history of everything you copy</h1>
+                    <p class="header__description | clr-secondary">Clipboard allows you to track and organize
+                        everything you copy. Instantly access your clipboard on all your devices.</p>
+                </section>
+                <div class="header-buttons | flex">
+                    <button class="download-button ios-version | clr-highlight fnt-semi-bold">Download for iOS</button>
+                    <button class="download-button mac-version | clr-highlight fnt-semi-bold">Download for Mac</button>
+                </div>
+            </header>
+
+            <section class="snippets | flow section-wrapper">
+                <h2 class="snippets__title | section-title">Keep track of your snippets</h2>
+                <p class="snippets__description | section-paragraph">Clipboard instantly stores any item you copy in the
+                    cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps
+                    will help you organize everything.</p>
+            </section>
+
+            <div class="features-top | flex">
+                <img src="images/image-computer.png" alt="Image of a computer" class="features-top__image">
+                <ul class="features-list | flex">
+                    <li class="feature-item | flow">
+                        <h2 class="feature-item__title | clr-primary fnt-semi-bold">Quick Search</h2>
+                        <p class="feature-item__paragraph | clr-secondary">Easily search your snippets by content,
+                            category, web address, application, and more.</p>
+                    </li>
+                    <li class="feature-item">
+                        <h2 class="feature-item__title | clr-primary fnt-semi-bold">iCloud Sync</h2>
+                        <p class="feature-item__paragraph | clr-secondary">Instantly saves and syncs snippets across all
+                            your devices.</p>
+                    </li>
+                    <li class="feature-item">
+                        <h2 class="feature-item__title | clr-primary fnt-semi-bold">Complete History</h2>
+                        <p class="feature-item__paragraph | clr-secondary">Retrieve any snippets from the first moment
+                            you started using the app.</p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </body>
 </html>
