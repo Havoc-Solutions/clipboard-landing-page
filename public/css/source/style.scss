@@ -251,7 +251,7 @@ footer {
 @media only screen and (width >= 1440px) {
   .content {
     background-image: url('../images/bg-header-desktop.png');
-    padding-top: 128px;
+    padding-top: 131px;
   }
 
   .features-top__image {
@@ -301,7 +301,10 @@ footer {
 
   .page-links {
     width: 100%;
+    grid-auto-flow: column;
     grid-template-columns: 160px 160px 255px;
+    grid-template-rows: 30px 30px;
+    row-gap: 12px;
     column-gap: 30px;
   }
 }
