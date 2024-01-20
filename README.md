@@ -24,9 +24,11 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 ### Links
 
 - [Check the Live Site](https://eon-clipboard-landing-page.netlify.app/)
-- [My Solution on Frontend Mentor]()
+- [My Solution on Frontend Mentor]()https://www.frontendmentor.io/solutions/html5scss-clipboard-landing-page-i_dGD8V0oH
 
 ### Screenshot
+
+![clipboard-landing-page-–-Figma](https://github.com/Havoc-Solutions/clipboard-landing-page/assets/15611424/f42b6cd9-53a8-4d39-b49e-48522ad69eef)
 
 ## Try it out!
 
