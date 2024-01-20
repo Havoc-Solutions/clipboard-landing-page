@@ -35,9 +35,21 @@ header {
   gap: 110px;
 }
 
+.features-bottom {
+  margin-top: 76px;
+}
+
+footer {
+  width: 100%;
+}
+
 // UTILITIES
 .flow > * + * {
   margin-top: var(--flow-space, 1rem);
+}
+
+.bg-secondary {
+  background-color: vars.$clr-gray-800;
 }
 
 .clr-primary {
@@ -58,6 +70,10 @@ header {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .section-wrapper {
@@ -87,6 +103,10 @@ header {
   background-repeat: no-repeat;
 }
 
+.header__logo {
+  @include utils.setDimensions(125px, 125px);
+}
+
 .header-text-wrapper {
   --flow-space: 16px;
   text-align: center;
@@ -105,7 +125,7 @@ header {
   letter-spacing: 0.15px;
 }
 
-.header-buttons {
+.download-buttons {
   margin-top: 48px;
   align-items: center;
   gap: 16px;
@@ -153,10 +173,53 @@ header {
   letter-spacing: 0.12px;
 }
 
+.supercharge-section {
+  margin-top: 163px;
+}
+
+.features-list-bottom {
+  gap: 30px;
+}
+
+.feature-item-bottom {
+  max-width: 350px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 44px;
+}
+
+.company-logos {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  @include utils.setDimensions(55px, 55px);
+}
+
+.social-links {
+  width: 120px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.page-links__anchor {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.135px;
+}
+
 // EXCEPTIONS
+.download-button:hover,
+.page-links__anchor:hover,
+.social-links__icon:hover path {
+  transition: all 0.2s ease-in-out;
+}
+
 .download-button:hover {
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
 }
 
 .ios-version:hover {
@@ -165,6 +228,23 @@ header {
 
 .mac-version:hover {
   background-color: vars.$clr-lavender-600;
+}
+
+.feature-blacklist {
+  gap: 40px;
+}
+
+.page-links__anchor:hover {
+  cursor: pointer;
+  color: vars.$clr-green-400;
+}
+
+.social-links__icon:hover {
+  cursor: pointer;
+}
+
+.social-links__icon:hover path {
+  fill: vars.$clr-green-400;
 }
 
 // DESKTOP VERSION
@@ -178,6 +258,51 @@ header {
     @include utils.setDimensions(752px, 572px);
     position: relative;
     left: -30px;
+  }
+
+  .devices-image {
+    @include utils.setDimensions(812px, 475px);
+    margin-top: 110px;
+  }
+
+  .features-list-bottom {
+    justify-content: center;
+    height: 216px;
+  }
+
+  .features__text-icon, .features__preview-icon {
+    margin-top: 4px;
+  }
+
+  .company-logos {
+    @include utils.setDimensions(100%, 72px);
+    margin-top: 150px;
+    flex-shrink: 0;
+    padding-inline: 165px;
+  }
+
+  footer {
+    margin-top: 150px;
+    height: 150px;
+    padding-inline: 165px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 135px;
+  }
+
+  .footer-inner-wrapper {
+    @include utils.setDimensions(825px, 72px);
+    gap: 135px;
+  }
+
+  .footer__logo {
+    margin-top: 5px;
+  }
+
+  .page-links {
+    width: 100%;
+    grid-template-columns: 160px 160px 255px;
+    column-gap: 30px;
   }
 }
 
@@ -205,7 +330,7 @@ header {
     letter-spacing: 0.12px;
   }
 
-  .header-buttons {
+  .download-buttons {
     width: 100%;
     flex-direction: column;
     gap: 24px;
@@ -253,5 +378,67 @@ header {
 
   .access-section {
     margin-top: 186px;
+  }
+
+  .devices-image {
+    margin-top: 64px;
+  }
+
+  .supercharge-section {
+    margin-top: 131px;
+  }
+
+  .features-bottom {
+    margin-top: 90px;
+  }
+
+  .features-list-bottom {
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .company-logos {
+    @include utils.setDimensions(139px, 439px);
+    margin-top: 132px;
+    flex-direction: column;
+  }
+
+  .company-logos__ibm {
+    width: 121px;
+  }
+
+  .company-logos__microsoft {
+    width: 135px;
+  }
+
+  .company-logos__hp {
+    width: 113px;
+  }
+
+  .company-logos__vector {
+    width: 105px;
+  }
+
+  footer {
+    margin-top: 170px;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .footer-inner-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer__logo {
+    margin-top: 52px;
+  }
+
+  .page-links {
+    text-align: center;
+    gap: 20px;
   }
 }
