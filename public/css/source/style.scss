@@ -130,12 +130,6 @@ header {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.10), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
 }
 
-.features-top__image {
-  @include utils.setDimensions(752px, 572px);
-  position: relative;
-  left: -30px;
-}
-
 .features-list {
   flex-direction: column;
   align-items: flex-start;
@@ -178,6 +172,12 @@ header {
   .content {
     background-image: url('../images/bg-header-desktop.png');
     padding-top: 128px;
+  }
+
+  .features-top__image {
+    @include utils.setDimensions(752px, 572px);
+    position: relative;
+    left: -30px;
   }
 }
 
@@ -228,5 +228,30 @@ header {
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.12px;
+  }
+
+  .snippets-section {
+    margin-top: 160px;
+  }
+
+  .features-top {
+    flex-direction: column;
+    margin-top: 65px;
+    align-self: stretch;
+    gap: 56px;
+  }
+
+  .features-top__image {
+    height: 238px;
+  }
+
+  .features-list {
+    text-align: center;
+    gap: 48px;
+    padding-top: 56px;
+  }
+
+  .access-section {
+    margin-top: 186px;
   }
 }
